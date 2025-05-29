@@ -1,0 +1,81 @@
+/* ---------- Part 1: Flexbox Basics ---------- */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- Part 2: Inline vs. Block ---------- */
+.block-demo {
+    background-color: #ffeb3b;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.inline-demo {
+    display: inline-block;
+    /* still inline-level but accepts width/margin */
+    background-color: #03a9f4;
+    color: white;
+    margin: 0.25rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/* ---------- Part 3: Advanced Form ---------- */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    max-width: 600px;
+}
+
+.form-group {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.form-submit {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-submit button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #673ab7;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-submit button:hover {
+    background-color: #5e35b1;
+}

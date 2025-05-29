@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox & Forms Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <section>
+        <h2>Part 1: Flexbox Container</h2>
+        <div class="flex-container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Part 2: Inline vs. Block</h2>
+        <p class="block-demo">This is a &lt;p&gt; paragraph (block) — it spans the full width.</p>
+        <div class="block-demo">This is a &lt;div&gt; (block) — also full width.</div>
+        <span class="inline-demo">This is a &lt;span&gt; (inline)</span>
+        <a href="#" class="inline-demo">This is an &lt;a&gt; link (inline)</a>
+    </section>
+
+    <section>
+        <h2>Part 3: Advanced Form</h2>
+        <form class="form-container" aria-label="Registration form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" autofocus aria-required="true" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required
+                    aria-required="true" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="••••••" required
+                    aria-required="true" />
+            </div>
+            <div class="form-group form-submit">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
